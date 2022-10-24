@@ -1,9 +1,24 @@
 <template>
   <div id="app">
-    <router-view/>
+    <the-nav/>
+    <router-view />
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import TheNav from './components/TheNav.vue'
+  export default {
+  components: { TheNav },
+    
+  }
+</script>
 
+<style lang="scss" scoped>
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+#app {
+  min-height: 100vh;
+  background-color: #121212;
+}
 </style>
+
