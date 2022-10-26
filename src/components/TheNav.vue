@@ -21,9 +21,9 @@
         </div>
       </div>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><a class="dropdown-item" href="#">Le mie richieste</a></li>
+        <li><a class="dropdown-item" href="#">Le mie spedizioni</a></li>
+        <li><a class="dropdown-item" href="#">Archivio</a></li>
       </ul>
     </div>
   </nav>
