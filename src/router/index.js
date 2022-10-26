@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import UserTerms from "../views/UserTerms.vue";
 import PaymentArea from "../views/PaymentArea.vue";
+import CompletedPayment from '../views/CompletedPayment.vue';
 Vue.use(VueRouter);
 
 const routes = [
@@ -14,6 +15,11 @@ const routes = [
     path : "/payment",
     name : "PaymentArea",
     component : PaymentArea,
+  },
+  {
+    path : "/completed/:type",
+    name : "CompletedPayment",
+    component : CompletedPayment,
   },
 ];
 

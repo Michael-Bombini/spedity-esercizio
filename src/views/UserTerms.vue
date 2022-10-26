@@ -96,6 +96,13 @@ a {
 }
 .back {
   border: 1px solid #e76262;
+   transition: color 0.4s ease;
+
+
+  &:hover {
+    color: #ca3131;
+    transition: color 0.4s ease;
+  }
 }
 .go {
   border: 1px solid #4774fb;

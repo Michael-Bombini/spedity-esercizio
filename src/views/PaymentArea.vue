@@ -71,20 +71,22 @@
               </div>
             </div>
             <div class="mt-4">
-              <router-link to="/"
+              <router-link
+                :to="{ name: 'CompletedPayment', params: { type: 'carta' } }"
                 >Conferma e paga <span>152.50€</span></router-link
               >
             </div>
           </div>
           <div v-if="pagamento === 'bonifico'">
             <div class="mt-4">
-              <router-link to="/"
+              <router-link
+                :to="{ name: 'CompletedPayment', params: { type: 'bonifico' } }"
                 >Conferma l'ordine di <span>152.50€</span></router-link
               >
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-3 text-white">
+        <div class="col-sm-12 col-md-3 text-white pt-3">
           <div class="fw-bold order">Il tuo ordine</div>
           <div class="d-flex justify-content-between py-3">
             <div>imponibile</div>
@@ -100,6 +102,7 @@
           </div>
         </div>
       </div>
+      <router-link to="/" class="back my-5">Torna indietro</router-link>
     </div>
   </div>
 </template>
@@ -168,7 +171,7 @@ input[type="text"] {
   width: 60%;
 }
 
-a {
+a:not(.back) {
   text-decoration: none;
   color: #fff;
   text-align: center;
@@ -186,7 +189,19 @@ a {
 .totale {
   border-top: 1px solid #fff;
 }
+.back {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  color: #fff;
+  border: 1px solid #e76262;
+  transition: color 0.4s ease;
 
+  &:hover {
+    color: #ca3131;
+    transition: color 0.4s ease;
+  }
+}
 @media screen and (max-width: 770px) {
   .payment {
     border: none;
