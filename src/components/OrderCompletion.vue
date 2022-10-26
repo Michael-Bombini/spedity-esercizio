@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-content-center py-4">
+  <div class="row justify-content-center py-4 text-center">
     <div class="col">
       <span :class="{ 'attivo': step === 1 , 'inattivo' : step !==1   }" class="circle">1</span
       ><span :class="{ 'attivo_text': step === 1 , 'inattivo_text' : step !==1    }">Dettagli ordine</span>

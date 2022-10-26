@@ -1,6 +1,8 @@
 <template>
   <nav class="d-flex justify-content-between align-items-center">
-    <img class="logo" src="../assets/images/logo.png" alt="" />
+    <router-link to="/">
+      <img class="logo" src="../assets/images/logo.png" alt="" />
+    </router-link>
 
     <div class="dropdown">
       <div
